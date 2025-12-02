@@ -1,0 +1,44 @@
+{
+  "boxes": [
+    {
+      "id": 1,
+      "name": "Коробка №1",
+      "description": "",
+      "image": "box1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Коробка №2",
+      "description": "",
+      "image": "box2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Коробка №3",
+      "description": "",
+      "image": "box3.jpg"
+    }
+  ],
+  "meds": [
+    {
+      "id": 1,
+      "box_id": 1,
+      "name": "Нурофен",
+      "qty": 10,
+      "qty_unit": "таблеток",
+      "expires": "2026-06",
+      "cell": "A1",
+      "photo": "nurofen.jpg",
+      "note": "От боли и температуры.",
+      "analogs": [
+        "ибупрофен"
+      ],
+      "tags": [
+        "жаропонижающее"
+      ]
+    }
+  ],
+  "meta": {
+    "updated_at": "2025-12-02T07:34:04.210106Z"
+  }
+}

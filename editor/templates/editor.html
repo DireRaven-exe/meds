@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Редактор аптечки</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://unpkg.com/sakura.css/css/sakura-dark.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/editor.css">
+</head>
+<body>
+  <h1>Редактор аптечки</h1>
+  <p>Здесь ты можешь редактировать коробки и лекарства. После изменений нажми «Сохранить» и при желании «Опубликовать».</p>
+
+  <section>
+    <h2>Коробки</h2>
+    <div id="boxes-list"></div>
+    <button id="add-box">Добавить коробку</button>
+  </section>
+
+  <section>
+    <h2>Лекарства</h2>
+    <label>Фильтр по коробке:
+      <select id="box-filter"></select>
+    </label>
+    <div id="meds-list"></div>
+    <button id="add-med">Добавить лекарство</button>
+  </section>
+
+  <section>
+    <h2>Изображения</h2>
+    <div id="drop-area" class="drop-area">
+      Перетащи сюда файлы или кликни для выбора
+      <input type="file" id="fileElem" multiple accept="image/*">
+    </div>
+    <div id="upload-result"></div>
+  </section>
+
+  <section>
+    <h2>Действия</h2>
+    <button id="save-btn">💾 Сохранить data.json</button>
+    <button id="publish-btn">⬆ Опубликовать (git push)</button>
+    <div id="status"></div>
+  </section>
+
+  <script src="/static/editor.js"></script>
+</body>
+</html>

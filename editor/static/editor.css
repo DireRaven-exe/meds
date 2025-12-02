@@ -1,0 +1,26 @@
+.drop-area {
+  border: 2px dashed #888;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.drop-area.highlight {
+  border-color: #4ade80;
+  background: rgba(74, 222, 128, 0.1);
+}
+.box-card, .med-card {
+  border: 1px solid #555;
+  padding: 8px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+}
+.box-card input, .med-card input, .med-card textarea {
+  width: 100%;
+  margin: 2px 0;
+}
+.small {
+  font-size: 0.9em;
+  opacity: 0.8;
+}
